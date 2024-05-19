@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musica Play</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-player">
+      <div class="playlist-musica">
+        <img src="./imagens/um-close-up-de-um-monte-de-notas-musicais-em-um-fundo-preto-ai-generative_900814-71518.jpeg" alt="" id="capaMusica" class="capa-musica">
+        <div class="desc-musica">
+          <p id="tituloMusica">attack on bangtan</p>
+          <span id="artistaMusica">BTS</span>
+        </div>
+      </div>
+      <div class="controles">
+        <button id="voltar"><img src="voltar.jpg" alt="voltar"></button>
+        <button id="play"><img src="play-pause.jpg" alt="play"></button>
+        <button id="pause" class="hide"><img src="pause.jpg" alt="pause"></button>
+        <button id="avancar"><img src="avanca.jpg" alt="avancar"></button>
+      </div>
+      <div class="container-progresso">
+        <input id="progressBar" type="range" value="0" min="0" max="100" step="1">
+      </div>
+      <div class="tempo-musica">
+        <span id="tempoAtual">00:00</span>
+        <span id="tempoTotal">04:16</span>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
